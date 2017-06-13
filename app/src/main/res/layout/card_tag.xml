@@ -7,34 +7,36 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         android:elevation="3dp">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:background="@drawable/round_border"
-            android:layout_margin="10dp">
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
             <TextView
                 android:id="@+id/tagname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 android:layout_weight="3"
                 android:text="#This_is_a_tag"
-                android:textSize="20dp"
                 android:textColor="#ffffff"
-                android:layout_margin="3dp"/>
+                android:textSize="20dp" />
 
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>
